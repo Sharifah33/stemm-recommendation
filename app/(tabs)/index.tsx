@@ -5,6 +5,7 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 export default function App() {
   const [location, setLocation] = useState<any>(null);
 
+
   const getLocation = async () => {
     let { status } = await Location.requestForegroundPermissionsAsync();
 
